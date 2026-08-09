@@ -1,98 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-noir-gold">
-    <title>발산 노래방 이벤트 블로그 | 마이크로사운드 최적화 가이드</title>
-    <meta name="description" content="발산 노래방 이벤트 공간의 음향 최적화 전략. 최신 DSP 보정, 객실 구조별 반사음 제어, 2000곡 레퍼토리 매칭 솔루션. 프리미엄 노래방 엔지니어링 가이드.">
-    <meta name="keywords" content="발산 노래방, 노래방 음향 최적화, 노래방 DSP, 객실 음향 보정, 프리미엄 노래방 시스템, 발산 노래방 이벤트, 노래방 마이크 세팅">
-    <link rel="canonical" href="https://balsan-song-tip.program-school.online/blog.html">
-    <meta property="og:title" content="발산 노래방 이벤트 블로그 | 마이크로사운드 최적화 가이드">
-    <meta property="og:description" content="발산 노래방 이벤트 공간의 음향 최적화 전략. 최신 DSP 보정, 객실 구조별 반사음 제어, 2000곡 레퍼토리 매칭 솔루션. 프리미엄 노래방 엔지니어링 가이드.">
-    <style>
-        /* ---------- RESET & BASE ---------- */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 18px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: #0b0a0c;
-            color: #eae6df;
-            line-height: 1.65;
-            font-weight: 380;
-            letter-spacing: 0.01em;
-        }
-        a { color: #d4af37; text-decoration: none; border-bottom: 1px solid rgba(212,175,55,0.25); transition: border-color 0.25s; }
-        a:hover { border-bottom-color: #d4af37; }
-        img, svg { display: block; max-width: 100%; height: auto; }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>발산 노래방 이벤트 블로그 | 마이크로사운드 최적화 가이드</title>
+ <meta name="description" content="발산 노래방 이벤트 공간의 음향 최적화 전략. 최신 DSP 보정, 객실 구조별 반사음 제어, 2000곡 레퍼토리 매칭 솔루션. 프리미엄 노래방 엔지니어링 가이드.">
+ <meta name="keywords" content="발산 노래방, 노래방 음향 최적화, 노래방 DSP, 객실 음향 보정, 프리미엄 노래방 시스템, 발산 노래방 이벤트, 노래방 마이크 세팅">
+ <link rel="canonical" href="https://balsan-song-tip.program-school.online/blog.html">
+ <meta property="og:title" content="발산 노래방 이벤트 블로그 | 마이크로사운드 최적화 가이드">
+ <meta property="og:description" content="발산 노래방 이벤트 공간의 음향 최적화 전략. 최신 DSP 보정, 객실 구조별 반사음 제어, 2000곡 레퍼토리 매칭 솔루션. 프리미엄 노래방 엔지니어링 가이드.">
+ <style>
+ /* ---------- RESET & BASE ---------- */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ html { font-size: 18px; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background: #0b0a0c;
+ color: #eae6df;
+ line-height: 1.65;
+ font-weight: 380;
+ letter-spacing: 0.01em;
+ }
+ a { color: #d4af37; text-decoration: none; border-bottom: 1px solid rgba(212,175,55,0.25); transition: border-color 0.25s; }
+ a:hover { border-bottom-color: #d4af37; }
+ img, svg { display: block; max-width: 100%; height: auto; }
 
-        /* ---------- TYPOGRAPHY ---------- */
-        h1, h2, h3, h4 { font-weight: 520; letter-spacing: -0.02em; color: #f5f0ea; }
-        h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1.2rem; font-weight: 600; }
-        h2 { font-size: 1.9rem; margin-top: 2.8rem; margin-bottom: 1rem; border-left: 6px solid #d4af37; padding-left: 1rem; }
-        h3 { font-size: 1.35rem; margin-top: 2rem; margin-bottom: 0.6rem; color: #d4af37; }
-        p { margin-bottom: 1.4rem; }
-        .drop-cap::first-letter { font-size: 3.2rem; font-weight: 600; float: left; margin-right: 0.65rem; margin-top: 0.1rem; color: #d4af37; line-height: 0.85; }
+ /* ---------- TYPOGRAPHY ---------- */
+ h1, h2, h3, h4 { font-weight: 520; letter-spacing: -0.02em; color: #f5f0ea; }
+ h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1.2rem; font-weight: 600; }
+ h2 { font-size: 1.9rem; margin-top: 2.8rem; margin-bottom: 1rem; border-left: 6px solid #d4af37; padding-left: 1rem; }
+ h3 { font-size: 1.35rem; margin-top: 2rem; margin-bottom: 0.6rem; color: #d4af37; }
+ p { margin-bottom: 1.4rem; }
+ .drop-cap::first-letter { font-size: 3.2rem; font-weight: 600; float: left; margin-right: 0.65rem; margin-top: 0.1rem; color: #d4af37; line-height: 0.85; }
 
-        /* ---------- DROP CAP UTILITY ---------- */
-        .drop-cap { display: block; }
+ /* ---------- DROP CAP UTILITY ---------- */
+ .drop-cap { display: block; }
 
-        /* ---------- LAYOUT ---------- */
-        .container { max-width: 1120px; margin: 0 auto; padding: 0 1.8rem; }
-        section { padding: 3.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.08); }
+ /* ---------- LAYOUT ---------- */
+ .container { max-width: 1120px; margin: 0 auto; padding: 0 1.8rem; }
+ section { padding: 3.2rem 0; border-bottom: 1px solid rgba(212,175,55,0.08); }
 
-        /* ---------- HEADER & NAVIGATION ---------- */
-        header { background: #0d0c0f; border-bottom: 1px solid #2a2628; padding: 0.9rem 0; position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px); background: rgba(11,10,12,0.92); }
-        .nav-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-        .logo a { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.5px; border: none; color: #f0ebe3; }
-        .logo a span { color: #d4af37; }
-        .nav-list { display: flex; gap: 2.2rem; list-style: none; }
-        .nav-list a { font-size: 0.94rem; font-weight: 450; border: none; color: #c9c3b9; padding: 0.3rem 0; position: relative; }
-        .nav-list a::after { content: ''; display: block; width: 0; height: 2px; background: #d4af37; transition: width 0.25s; margin-top: 2px; }
-        .nav-list a:hover::after { width: 100%; }
-        .nav-list a.active { color: #d4af37; border-bottom: 2px solid #d4af37; }
+ /* ---------- HEADER & NAVIGATION ---------- */
+ header { background: #0d0c0f; border-bottom: 1px solid #2a2628; padding: 0.9rem 0; position: sticky; top: 0; z-index: 20; backdrop-filter: blur(8px); background: rgba(11,10,12,0.92); }
+ .nav-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+ .logo a { font-size: 1.4rem; font-weight: 600; letter-spacing: -0.5px; border: none; color: #f0ebe3; }
+ .logo a span { color: #d4af37; }
+ .nav-list { display: flex; gap: 2.2rem; list-style: none; }
+ .nav-list a { font-size: 0.94rem; font-weight: 450; border: none; color: #c9c3b9; padding: 0.3rem 0; position: relative; }
+ .nav-list a::after { content: ''; display: block; width: 0; height: 2px; background: #d4af37; transition: width 0.25s; margin-top: 2px; }
+ .nav-list a:hover::after { width: 100%; }
+ .nav-list a.active { color: #d4af37; border-bottom: 2px solid #d4af37; }
 
-        /* ---------- HAMBURGER (mobile) ---------- */
-        .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px 2px; }
-        .hamburger span { width: 28px; height: 2.5px; background: #d4af37; border-radius: 2px; transition: 0.25s; }
+ /* ---------- HAMBURGER (mobile) ---------- */
+ .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px 2px; }
+ .hamburger span { width: 28px; height: 2.5px; background: #d4af37; border-radius: 2px; transition: 0.25s; }
 
-        /* ---------- TEL LINK ---------- */
-        .tel-link { font-weight: 550; font-size: 1rem; background: #1b181b; padding: 0.4rem 1.2rem; border-radius: 40px; border: 1px solid #3a3337; color: #d4af37; transition: 0.25s; white-space: nowrap; }
-        .tel-link:hover { background: #2a2428; border-color: #d4af37; }
+ /* ---------- TEL LINK ---------- */
+ .tel-link { font-weight: 550; font-size: 1rem; background: #1b181b; padding: 0.4rem 1.2rem; border-radius: 40px; border: 1px solid #3a3337; color: #d4af37; transition: 0.25s; white-space: nowrap; }
+ .tel-link:hover { background: #2a2428; border-color: #d4af37; }
 
-        /* ---------- RESPONSIVE 768 ---------- */
-        @media (max-width: 768px) {
-            html { font-size: 16px; }
-            .hamburger { display: flex; }
-            .nav-list { display: none; flex-direction: column; width: 100%; background: #0d0c0f; padding: 1.2rem 0 1.8rem; gap: 1rem; align-items: center; border-top: 1px solid #2a2628; margin-top: 1rem; }
-            .nav-list.open { display: flex; }
-            .nav-list a { font-size: 1.05rem; }
-            .nav-wrap { position: relative; }
-            .tel-link { margin-left: auto; margin-right: 0.5rem; }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.6rem; }
-        }
-        @media (max-width: 480px) {
-            .container { padding: 0 1.2rem; }
-            h1 { font-size: 1.8rem; }
-        }
+ /* ---------- RESPONSIVE 768 ---------- */
+ @media (max-width: 768px) {
+ html { font-size: 16px; }
+ .hamburger { display: flex; }
+ .nav-list { display: none; flex-direction: column; width: 100%; background: #0d0c0f; padding: 1.2rem 0 1.8rem; gap: 1rem; align-items: center; border-top: 1px solid #2a2628; margin-top: 1rem; }
+ .nav-list.open { display: flex; }
+ .nav-list a { font-size: 1.05rem; }
+ .nav-wrap { position: relative; }
+ .tel-link { margin-left: auto; margin-right: 0.5rem; }
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.6rem; }
+ }
+ @media (max-width: 480px) {
+ .container { padding: 0 1.2rem; }
+ h1 { font-size: 1.8rem; }
+ }
 
-        /* ---------- ADDITIONAL STYLING (BLOG SPECIFIC) ---------- */
-        .blog-hero { padding-top: 2rem; padding-bottom: 1.5rem; }
-        .blog-meta { display: flex; gap: 1.2rem; color: #9b938b; font-size: 0.85rem; margin-bottom: 2rem; border-bottom: 1px solid #2a2628; padding-bottom: 0.8rem; }
-        .blog-meta span { letter-spacing: 0.3px; }
-        .data-card { background: #131114; border-left: 4px solid #d4af37; padding: 1.8rem 2.2rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
-        .data-card p { margin-bottom: 0.3rem; }
-        .data-card strong { color: #d4af37; font-weight: 500; }
-        .stat-highlight { display: inline-block; background: #1e1a1d; padding: 0.15rem 0.7rem; border-radius: 20px; font-weight: 450; color: #f0e3d6; }
-        blockquote { background: #100e11; padding: 1.6rem 2rem; margin: 2rem 0; border-left: 6px solid #d4af37; font-style: normal; color: #d6cfc4; }
-        blockquote p { margin-bottom: 0.2rem; font-size: 0.95rem; }
+ /* ---------- ADDITIONAL STYLING (BLOG SPECIFIC) ---------- */
+ .blog-hero { padding-top: 2rem; padding-bottom: 1.5rem; }
+ .blog-meta { display: flex; gap: 1.2rem; color: #9b938b; font-size: 0.85rem; margin-bottom: 2rem; border-bottom: 1px solid #2a2628; padding-bottom: 0.8rem; }
+ .blog-meta span { letter-spacing: 0.3px; }
+ .data-card { background: #131114; border-left: 4px solid #d4af37; padding: 1.8rem 2.2rem; margin: 2rem 0; border-radius: 0 8px 8px 0; }
+ .data-card p { margin-bottom: 0.3rem; }
+ .data-card strong { color: #d4af37; font-weight: 500; }
+ .stat-highlight { display: inline-block; background: #1e1a1d; padding: 0.15rem 0.7rem; border-radius: 20px; font-weight: 450; color: #f0e3d6; }
+ blockquote { background: #100e11; padding: 1.6rem 2rem; margin: 2rem 0; border-left: 6px solid #d4af37; font-style: normal; color: #d6cfc4; }
+ blockquote p { margin-bottom: 0.2rem; font-size: 0.95rem; }
 
-        /* ---------- FOOTER ---------- */
-        footer { text-align: center; padding: 2.8rem 0; color: #7a736b; border-top: 1px solid #1f1c1e; font-size: 0.8rem; }
-        footer a { border: none; color: #b0a89e; }
-    </style>
+ /* ---------- FOOTER ---------- */
+ footer { text-align: center; padding: 2.8rem 0; color: #7a736b; border-top: 1px solid #1f1c1e; font-size: 0.8rem; }
+ footer a { border: none; color: #b0a89e; }
+ </style>
   <meta property="og:url" content="https://balsan-song-tip.program-school.online/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
@@ -101,73 +99,73 @@
 
 <!-- 헤더: 동일한 시스템 -->
 <header>
-    <div class="container nav-wrap">
-        <div class="logo"><a href="/"><span>●</span> 발산노래방</a></div>
-        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-list" id="navList">
-            <li><a href="/">홈</a></li>
-            <li><a href="/about">소개</a></li>
-            <li><a href="/event">이벤트</a></li>
-            <li><a href="/blog" class="active">블로그</a></li>
-            <li><a href="/contact">예약</a></li>
-        </ul>
-        <a href="tel:01062790862" class="tel-link">📞 010-6279-0862</a>
-    </div>
+ <div class="container nav-wrap">
+ <div class="logo"><a href="/"><span>●</span> 발산노래방</a></div>
+ <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+ 
+ </button>
+ <ul class="nav-list" id="navList">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/event">이벤트</a></li>
+ <li><a href="/blog" class="active">블로그</a></li>
+ <li><a href="/contact">예약</a></li>
+ </ul>
+ 
+ </div>
 </header>
 
 <main>
-  <article>
-    <header class="blog-hero">
-      <p class="drop-cap">노래방을 고를 때 인테리어나 가격만큼 중요하게 언급되는 것이 음향이다. 흔히 '마이크로사운드'라는 표현으로 불리는 미세한 음향 조정은 실제로 여러 요소가 겹쳐 만들어지는 결과물이다. 이 글에서는 발산 지역 노래방을 이용하기 전 알아두면 좋은 음향 관련 용어와 확인 포인트를 정리했다.</p>
-      <div class="blog-meta">
-        <span>정보</span>
-        <span>발산 · 노래방 이용 가이드</span>
-      </div>
-    </header>
+ <article>
+ <header class="blog-hero">
+ <p class="drop-cap">노래방을 고를 때 인테리어나 가격만큼 중요하게 언급되는 것이 음향이다. 흔히 '마이크로사운드'라는 표현으로 불리는 미세한 음향 조정은 실제로 여러 요소가 겹쳐 만들어지는 결과물이다. 이 글에서는 발산 지역 노래방을 이용하기 전 알아두면 좋은 음향 관련 용어와 확인 포인트를 정리했다.</p>
+ <div class="blog-meta">
+ <span>정보</span>
+ <span>발산 · 노래방 이용 가이드</span>
+ </div>
+ </header>
 
-    <section class="container">
-      <h2>음향을 구성하는 요소</h2>
-      <div class="data-card">
-        <h3>룸 크기와 형태</h3>
-        <p>공간의 넓이와 벽면 구조에 따라 소리가 퍼지거나 뭉치는 정도가 달라진다.</p>
-      </div>
-      <div class="data-card">
-        <h3>흡음·반사 자재</h3>
-        <p>벽과 천장에 쓰인 자재에 따라 잔향이 길게 남는지, 짧게 정리되는지가 갈린다.</p>
-      </div>
-      <div class="data-card">
-        <h3>스피커 배치</h3>
-        <p>스피커 위치와 방향은 좌석 어디에 앉아도 고르게 들리는지를 좌우한다.</p>
-      </div>
-      <div class="data-card">
-        <h3>마이크 세팅</h3>
-        <p>감도와 에코 조정 값은 곡 장르나 인원 수에 맞춰 달라질 수 있다.</p>
-      </div>
-      <div class="data-card">
-        <h3>배경 음량 관리</h3>
-        <p>대기 시간이나 곡 전환 시 재생되는 배경음의 크기도 체감 만족도에 영향을 준다.</p>
-      </div>
-    </section>
+ <section class="container">
+ <h2>음향을 구성하는 요소</h2>
+ <div class="data-card">
+ <h3>룸 크기와 형태</h3>
+ <p>공간의 넓이와 벽면 구조에 따라 소리가 퍼지거나 뭉치는 정도가 달라진다.</p>
+ </div>
+ <div class="data-card">
+ <h3>흡음·반사 자재</h3>
+ <p>벽과 천장에 쓰인 자재에 따라 잔향이 길게 남는지, 짧게 정리되는지가 갈린다.</p>
+ </div>
+ <div class="data-card">
+ <h3>스피커 배치</h3>
+ <p>스피커 위치와 방향은 좌석 어디에 앉아도 고르게 들리는지를 좌우한다.</p>
+ </div>
+ <div class="data-card">
+ <h3>마이크 세팅</h3>
+ <p>감도와 에코 조정 값은 곡 장르나 인원 수에 맞춰 달라질 수 있다.</p>
+ </div>
+ <div class="data-card">
+ <h3>배경 음량 관리</h3>
+ <p>대기 시간이나 곡 전환 시 재생되는 배경음의 크기도 체감 만족도에 영향을 준다.</p>
+ </div>
+ </section>
 
-    <section class="container">
-      <div class="stat-highlight">
-        <p>음향은 장비 하나가 아니라 공간, 자재, 배치, 세팅이 함께 맞물려 만들어지는 결과라는 점을 기억하면 방문 매장을 비교할 때 도움이 된다. 특정 수치를 내세우는 안내보다, 어떤 요소가 어떻게 작용하는지를 아는 편이 실제 선택에 더 도움이 된다.</p>
-      </div>
-    </section>
+ <section class="container">
+ <div class="stat-highlight">
+ <p>음향은 장비 하나가 아니라 공간, 자재, 배치, 세팅이 함께 맞물려 만들어지는 결과라는 점을 기억하면 방문 매장을 비교할 때 도움이 된다. 특정 수치를 내세우는 안내보다, 어떤 요소가 어떻게 작용하는지를 아는 편이 실제 선택에 더 도움이 된다.</p>
+ </div>
+ </section>
 
-    <section class="container">
-      <h2>방문 전 확인하면 좋은 것</h2>
-      <p>음향에 민감한 편이라면 방문 전 룸 형태나 최근 정비 여부를 문의해보는 것도 방법이다. 인원수에 맞는 룸 크기를 선택하는 것만으로도 체감 음질이 달라질 수 있으며, 곡 장르에 따라 선호하는 룸 구조가 다를 수 있다는 점도 참고할 만하다.</p>
-    </section>
+ <section class="container">
+ <h2>방문 전 확인하면 좋은 것</h2>
+ <p>음향에 민감한 편이라면 방문 전 룸 형태나 최근 정비 여부를 문의해보는 것도 방법이다. 인원수에 맞는 룸 크기를 선택하는 것만으로도 체감 음질이 달라질 수 있으며, 곡 장르에 따라 선호하는 룸 구조가 다를 수 있다는 점도 참고할 만하다.</p>
+ </section>
 
-    <section class="container">
-      <h2>문의 안내</h2>
-      <p>이용 관련 문의나 원하는 방문 일정은 아래 번호로 연락하면 안내를 받을 수 있다.</p>
-      <a href="tel:01062790862" class="tel-link">01062790862</a>
-    </section>
-  </article>
+ <section class="container">
+ <h2>문의 안내</h2>
+ <p>이용 관련 문의나 원하는 방문 일정은 아래 번호로 연락하면 안내를 받을 수 있다.</p>
+ 
+ </section>
+ </article>
 </main>
 
 
